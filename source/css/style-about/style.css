@@ -1,0 +1,44 @@
+.animated-letter {
+    display: inline-block;
+    animation: animatedLetter .1s ease-in-out backwards;
+}
+.animated-bounce {
+    animation: animatedBounce 1.5s linear backwards infinite;
+}
+.animated-slide-up {
+    animation: animatedSlideUp 0.5s ease-in-out backwards;
+}
+@keyframes animatedLetter {
+    0% {
+        opacity: 0;
+        transform: translate(-10px, -20px) scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+}
+@keyframes animatedBounce {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(6px);
+    }
+    75% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes animatedSlideUp {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}

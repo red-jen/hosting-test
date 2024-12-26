@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./source/css/style.css">
+    <link rel="stylesheet" href="./source/css/style-home/style.css">
+    <title>Shop Shoes</title>
+    
+    <!-- script style tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-[#effffd]">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 text-white">
+        <div class="w-[92%] lg:w-[82%] mx-auto">
+            <div class="nav border-b border-gray-300">
+                <div class="hide-icon flex justify-between items-center">
+                    <!-- logo -->
+                    <a href="./index.html">
+                        <img id="changeImg" width="100px" src="./source/img/logo_shoes-removebg-preview.png" alt="">
+                    </a>
+    
+                    <!-- icons favorite, shop and user image but is hidden in desktop -->
+                    <div class="flex items-center">
+                        <div class="mr-10 lg:hidden">
+                            <a href="./pages/favorite.html">
+                                <span class="text-2xl mr-3 text-red-500"><i class="fa-solid fa-heart"></i></span>
+                            </a>
+                            <span class="text-2xl relative">
+                                <span class="p-1 bg-red-600 absolute -right-1 rounded-full"></span>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </span>
+                        </div>
+                        <div class="toggle text-4xl lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- menu -->
+                <div class="menu flex">
+                    <ul class="text-lg font-medium">
+                        <li class="active p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="index.html">Home</a></li>
+                        <li class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="./pages/products.html">Products</a></li>
+                        <li class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="./pages/about.html">About</a></li>
+                        <li class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="./pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- icons too but is hidden in phone -->
+                <div class="hide-icon-mb flex items-center">
+                    <div>
+                        <a href="./pages/favorite.html">
+                            <span class="text-2xl mr-3 text-red-500 hover:scale-150 cursor-pointer"><i class="fa-solid fa-heart"></i></span>
+                        </a>
+                        <span class="text-2xl relative cursor-pointer">
+                            <span class="p-1 bg-red-600 absolute -right-1 rounded-full"></span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+                    </div>
+                    <div class="user-img h-14 w-14 border-4 border-teal-600 rounded-full ml-9 overflow-hidden">
+                        <a href="./pages/auth/login.html">
+                            <img src="./source/img/149071.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="min-h-screen">
+        <!-- Video background -->
+        <video class="w-full h-full object-cover absolute top-0 left-0 z-[-1]" autoplay loop muted playsinline>
+            <source src="./source/img/img-page-home/Untitled video - Made with Clipchamp (1).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="w-[92%] lg:w-[82%] mx-auto h-screen text-white">
+            <!-- Section Hero -->
+            <section class="mt-20 lg:mt-36 relative z-[1]">
+                <div class="h-5/6 flex flex-col items-center justify-center">
+                    <h1 class="w-[80%] text-5xl md:text-6xl text-center font-extrabold mb-12 leading-tight [text-shadow:_0_2px_4px_rgb(75_85_99/_0.8)]">Shop Your <span class="text-teal-600">Favorite</span> Shoes Now</h1>
+                    <p class="font-medium text-center mb-8 lg:mb-10 w-[70%] lg:w-[50%]">
+                        Welcome to SHOES STORE, where style meets
+                        comfort. Discover a wide range of high-quality
+                        shoes for every occasion, from trendy sneakers
+                        to elegant heels and durable boots.
+                        Shop now and step into the perfect pair that 
+                        suits your style and needs!
+                    </p>
+                    <a class="px-12 py-3 bg-teal-600 rounded-full text-lg font-semibold transition-all drop-shadow-md hover:bg-teal-500 hover:transition-all" href="./pages/products.html">Shop Now</a>
+                    
+                    <div class="text-3xl flex mt-10">
+                        <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                            <img width="47px"  src="source/img/social-media-img/facebook2.svg" alt="">
+                        </a>
+                        <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                            <img width="45px"  src="source/img/social-media-img/instagram2.svg" alt="">
+                        </a>
+                        <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                            <img width="45px"  src="source/img/social-media-img/youtube2.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <!-- section partners -->
+    <section>
+        <div class="bg-white mt-20 p-2 overflow-hidden shadow-[1px_-1px_10px_#dddddd57]">
+            <div class="slider flex">
+                <img class="mr-20" width="100px" src="./source/img/img-page-home/logo-partners/puma.svg" alt="">
+                <img class="mr-20" width="100px" src="./source/img/img-page-home/logo-partners/nike.svg" alt="">
+                <img class="mr-20" width="100px" src="./source/img/img-page-home/logo-partners/adidas.svg" alt="">
+                <img class="mr-20" width="100px" src="./source/img/img-page-home/logo-partners/lacoste.svg" alt="">
+                <img class="mr-20" width="100px" src="./source/img/img-page-home/logo-partners/fila.svg" alt="">
+                <img class="mr-20" width="100px" src="./source/img/img-page-home/logo-partners/reebok.svg" alt="">
+                <img class="mr-20" width="100px" src="./source/img/img-page-home/logo-partners/puma.svg" alt="">
+                <img class="mr-20" width="100px" src="./source/img/img-page-home/logo-partners/nike.svg" alt="">
+                <img class="mr-20" width="100px" src="./source/img/img-page-home/logo-partners/adidas.svg" alt="">
+                <img class="mr-20" width="100px" src="./source/img/img-page-home/logo-partners/lacoste.svg" alt="">
+                <img class="mr-20" width="100px" src="./source/img/img-page-home/logo-partners/fila.svg" alt="">
+                <img class="mr-20" width="100px" src="./source/img/img-page-home/logo-partners/reebok.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- section sales -->
+    <section>
+        <div class="w-[92%] lg:w-[82%] mx-auto mt-20">
+            <div class="md:flex justify-between">
+                <div class="cursor-pointer w-full mb-5 md:mb-0 md:mr-5 rounded-xl text-white p-6 bg-[url('./source/img/img-page-home/xavier-teo-SxAXphIPWeg-unsplash2.jpg')] bg-center bg-no-repeat bg-cover shine-effect hover:scale-[1.03] duration-700">
+                    <h2 class="text-3xl font-light mb-3 tracking-wider">20% Off</h2>
+                    
+                    <div class="flex items-center mb-4">
+                        <div class="w-24 h-[1px] bg-white mr-3"></div>
+                        <p>SALE</p>
+                    </div>
+    
+                    <p class="text-2xl">Men & <br> Women Shoes</p>
+                </div>
+                <div class="cursor-pointer w-full rounded-xl text-white p-6 bg-[url('./source/img/img-page-home/fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg')] bg-center bg-no-repeat bg-cover shine-effect hover:scale-[1.03] duration-700">
+                    <h2 class="text-3xl font-light mb-3 tracking-wider">15% Off</h2>
+                    
+                    <div class="flex items-center mb-4">
+                        <div class="w-24 h-[1px] bg-white mr-3"></div>
+                        <p>SALE</p>
+                    </div>
+    
+                    <p class="text-2xl">Packet <br> Air Max Shoe </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section services -->
+    <section>
+        <div class="bg-white mt-20 py-5 shadow-[1px_-1px_10px_#dddddd57]">
+            <div class="w-[92%] lg:w-[82%] mx-auto text-center lg:text-start lg:flex">
+                <div class="flex flex-col items-center mb-10 lg:mr-10 lg:mb-0 lg:flex-row">
+                    <div class="lg:mr-5">
+                        <img width="70px" src="./source/img/img-page-home/customer-service.png" alt="">
+                    </div>
+                    <div class="w-[70%] md:w-[40%] lg:w-full mt-5 lg:mt-0">
+                        <h3 class="text-xl font-semibold mb-3">24/7 Free Support</h3>
+                        <p class="">We are committed to supporting our customers every step of the way</p>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col items-center mb-10 lg:mr-10 lg:mb-0 lg:flex-row">
+                    <div class="lg:mr-5">
+                        <img width="70px" src="./source/img/img-page-home/free-shipping.png" alt="">
+                    </div>
+                    <div class="w-[70%] md:w-[40%] lg:w-full">
+                        <h3 class="text-xl font-semibold mb-3">Free worldwide shipping</h3>
+                        <p class="">Enjoy free worldwide shipping on all orders, no exceptions.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center lg:flex-row">
+                    <div class="lg:mr-5">
+                        <img width="70px" src="./source/img/img-page-home/pay.png" alt="">
+                    </div>
+                    <div class="w-[70%] md:w-[40%] lg:w-full mt-5 lg:mt-0">
+                        <h3 class="text-xl font-semibold mb-3">Money back guarantee</h3>
+                        <p class="">Get a full refund with our money back guarantee.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section news letter -->
+    <section>
+        <div class="w-[92%] lg:w-[82%] mx-auto mt-20">
+            <div class="bg-white p-6 lg:flex lg:justify-between rounded-xl shadow-[1px_-1px_10px_#dddddd57]">
+                <div class="text-center lg:text-start lg:w-[40%]">
+                    <h2 class="text-3xl tracking-[4px] mb-5">Newsletter</h2>
+                    <p class="">Get the latest updates on new products and upcoming sales</p>
+                </div>
+    
+                <form action="" class="mt-7 lg:w-[50%]">
+                    <div class="w-full flex flex-col sm:flex-row">
+                        <input class="w-full mb-3 sm:w-4/6 focus-within:outline-none sm:mb-0 p-3 border-2 sm:border-r-0 rounded-lg sm:rounded-[10px_0_0_10px]" type="text" placeholder="Enter Your Email">
+                        <input class="w-full sm:w-2/6 cursor-pointer bg-teal-600 py-3 px-6 rounded-lg sm:rounded-[0_10px_10px_0] hover:bg-teal-500 text-white" type="submit" value="SUBSCRIBE">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-[92%] lg:w-[82%] mx-auto">
+        <!-- footer -->
+        <footer>
+            <div class="flex items-center justify-between pb-2 pt-5 border-t border-gray-300 mt-10">
+                <img width="80px" src="./source/img/logo_shoes-removebg-preview__1_-Photoroom-removebg-preview.png" alt="">
+                
+                <!-- nav footer -->
+                <div class="lg:flex items-center text-center">
+                    <h3 class="text-2xl font-semibold mb-4 lg:mb-1 lg:mr-7">Follow us</h3>
+                    <div class="text-3xl flex">
+                        <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                            <img width="37px"  src="source/img/social-media-img/facebook.svg" alt="">
+                        </a>
+                        <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                            <img width="35px"  src="source/img/social-media-img/instagram.svg" alt="">
+                        </a>
+                        <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                            <img width="35px"  src="source/img/social-media-img/youtube.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:flex justify-between mt-16">
+                <!-- information contact -->
+                 <div class="text-center lg:text-start font-medium">
+                    <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Contact</h2>
+                    <div class="mb-4 lg:flex">
+                        <span class="mr-3 text-teal-600"><i class="fa-solid fa-phone"></i></span>
+                        <p>0709123302</p>
+                    </div>
+                    <div class="mb-4 lg:flex">
+                        <span class="mr-3 text-teal-600"><i class="fa-solid fa-envelope"></i></span>
+                        <p>shoesstore@gmail.com</p>
+                    </div>
+                    <div class=" lg:flex">
+                        <span class="mr-3 text-teal-600"><i class="fa-solid fa-location-dot"></i></span>
+                        <p>46000, Safi Morocco</p>
+                    </div>
+                 </div>
+    
+                 <!-- menu -->
+                 <div class="text-center lg:text-start font-medium mt-9 leading-7 lg:mt-0">
+                    <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Menu</h2>
+                    <ul class="lg:block">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./pages/products.html">Products</a></li>
+                        <li><a href="./pages/about.html">About</a></li>
+                        <li><a href="./pages/contact.html">Contact</a></li>
+                    </ul>
+                 </div>
+    
+                 <!-- categories -->
+                 <div class="text-center lg:text-start font-medium mt-9 leading-7 lg:mt-0">
+                    <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Category</h2>
+                    <p>Men</p>
+                    <p>Women</p>
+                    <p>Work & Safety</p>
+                    <p>Runing</p>
+                    <p>Sport</p>
+                 </div>
+            </div>
+
+            <div class="border-t p-2 mt-6 text-center mx-auto w-[90%]">
+                <p>&copy; 2024 shoes store, All right reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./source/js/main.js"></script>
+    <script src="./source/js/scrollHeader.js"></script>
+</body>
+</html>

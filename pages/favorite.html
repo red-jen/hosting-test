@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../source/css/style.css">
+    <link rel="stylesheet" href="../source/css/style-favorite/style.css">
+    <title>Shoes Shop | Favorite</title>
+    
+    <!-- script style tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-[#effffd]">
+
+    <div class="w-[92%] lg:w-[82%] mx-auto">
+
+        <!-- header -->
+        <header>
+            <div class="nav border-b border-gray-300">
+                <div class="hide-icon flex justify-between items-center">
+
+                    <!-- logo -->
+                    <a href="../index.html">
+                        <img width="100px" src="../source/img/logo_shoes-removebg-preview__1_-Photoroom-removebg-preview.png" alt="">
+                    </a>
+
+                    <!-- icons favorite, shop and user image but is hidden in desktop -->
+                    <div class="flex items-center">
+                        <div class="mr-10 lg:hidden">
+                            <span class="text-2xl mr-3 text-red-500"><i class="fa-solid fa-heart"></i></span>
+                            <span class="text-2xl text-gray-700 relative">
+                                <span class="p-1 bg-red-600 absolute -right-1 rounded-full"></span>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </span>
+                        </div>
+                        <div class="toggle text-4xl lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- menu -->
+                <div class="menu flex">
+                    <ul class="text-lg font-medium">
+                        <li class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="../index.html">Home</a></li>
+                        <li class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="./products.html">Products</a></li>
+                        <li class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="./about.html">About</a></li>
+                        <li class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- icons too but is hidden in phone -->
+                <div class="hide-icon-mb flex items-center">
+                    <div>
+                        <span class="text-2xl mr-3 text-red-500 hover:scale-150"><i class="fa-solid fa-heart"></i></span>
+                        <span class="text-2xl text-gray-700 relative">
+                            <span class="p-1 bg-red-600 absolute -right-1 rounded-full"></span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+                    </div>
+                    <div class="user-img h-14 w-14 border-4 border-teal-600 rounded-full ml-9">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="flex flex-col">
+
+            <!-- Favorite List Section -->
+            <div id="favorite-list" class="py-20 xl:order-1">
+                <h1 class="text-center font-semibold text-3xl mb-10"><span class="text-teal-600">Favorite</span> List</h1>
+                <div id="favorite-list-items" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                </div>
+
+                <!-- Pagination -->
+                <div id="pagination" class="flex justify-center gap-3 *:border-2 *:rounded-full *:h-8 *:w-8 pt-10">
+                    <!-- <button type="button" class="border-teal-400 border-teal-600 hover:border-teal-600 bg-teal-200 transition-colors active">1</button>
+                    <button type="button" class="border-teal-400 hover:border-teal-600 transition-colors">2</button>
+                    <button type="button" class="border-teal-400 hover:border-teal-600 transition-colors">3</button> -->
+                </div>
+            </div>
+
+            <!-- Recommended Sneakers Section -->
+            <div id="recommended-sneakers" class="pb-20 xl:pt-20 xl:pb-0">
+                <h1 class="font-semibold text-3xl mb-10"><span class="text-teal-600">Recommended</span> Sneakers</h1>
+                <div id="recommended-list" class="grid grid-col-1 gap-7 md:gap-6 lg:grid-cols-3">
+
+                </div>
+                <a href="#" class="w-36 h-12 flex justify-center items-center font-semibold bg-teal-400 hover:bg-teal-600 hover:text-white transition-colors rounded-lg mt-7 mx-auto">View More</a>
+            </div>
+
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="flex items-center justify-between pb-2 pt-5 border-t border-gray-300 mt-10">
+                <img width="80px" src="../source/img/logo_shoes-removebg-preview__1_-Photoroom-removebg-preview.png" alt="">
+                
+                <!-- nav footer -->
+                <div class="lg:flex items-center text-center">
+                    <h3 class="text-2xl font-semibold mb-4 lg:mb-1 lg:mr-7">Follow us</h3>
+                    <div class="text-3xl flex">
+                        <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                            <img width="37px"  src="../source/img/social-media-img/facebook.svg" alt="">
+                        </a>
+                        <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                            <img width="35px"  src="../source/img/social-media-img/instagram.svg" alt="">
+                        </a>
+                        <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                            <img width="35px"  src="../source/img/social-media-img/youtube.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:flex justify-between mt-16">
+                <!-- information contact -->
+                 <div class="text-center lg:text-start font-medium">
+                    <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Contact</h2>
+                    <div class="mb-4 lg:flex">
+                        <span class="mr-3 text-teal-600"><i class="fa-solid fa-phone"></i></span>
+                        <p>0709123302</p>
+                    </div>
+                    <div class="mb-4 lg:flex">
+                        <span class="mr-3 text-teal-600"><i class="fa-solid fa-envelope"></i></span>
+                        <p>shoesstore@gmail.com</p>
+                    </div>
+                    <div class=" lg:flex">
+                        <span class="mr-3 text-teal-600"><i class="fa-solid fa-location-dot"></i></span>
+                        <p>46000, Safi Morocco</p>
+                    </div>
+                 </div>
+    
+                 <!-- menu -->
+                 <div class="text-center lg:text-start font-medium mt-9 leading-7 lg:mt-0">
+                    <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Menu</h2>
+                    <ul class="lg:block">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                 </div>
+    
+                 <!-- categories -->
+                 <div class="text-center lg:text-start font-medium mt-9 leading-7 lg:mt-0">
+                    <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Category</h2>
+                    <p>Men</p>
+                    <p>Women</p>
+                    <p>Work & Safety</p>
+                    <p>Runing</p>
+                    <p>Sport</p>
+                 </div>
+            </div>
+
+            <div class="border-t p-2 mt-6 text-center mx-auto w-[90%]">
+                <p>&copy; 2024 shoes store, All right reserved</p>
+            </div>
+        </footer>
+    </div>
+    
+    <div id="alerts" class="fixed bottom-10 left-10 flex flex-col-reverse">
+
+    </div>
+
+    <script src="../source/js/main.js"></script>
+    <script src="../source/js/favorite.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../source/css/style.css">
+    <title>Shop Shoes</title>
+    
+    <!-- script style tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-[#effffd]">
+
+    <div class="w-[92%] lg:w-[82%] mx-auto overflow-hidden">
+        <!-- header -->
+        <header>
+            <div class="nav border-b border-gray-300">
+                <div class="hide-icon flex justify-between items-center">
+
+                    <!-- logo -->
+                    <a href="../index.html">
+                        <img width="100px" src="../source/img/logo_shoes-removebg-preview__1_-Photoroom-removebg-preview.png" alt="">
+                    </a>
+
+                    <!-- icons favorite, shop and user image but is hidden in desktop -->
+                    <div class="flex items-center">
+                        <div class="mr-10 lg:hidden">
+                            <a href="./favorite.html">
+                                <span class="text-2xl mr-3 text-red-500 hover:scale-150 cursor-pointer"><i class="fa-solid fa-heart"></i></span>
+                            </a>
+                            <span class="text-2xl text-gray-700 relative">
+                                <span class="p-1 bg-red-600 absolute -right-1 rounded-full"></span>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </span>
+                        </div>
+                        <div class="toggle text-4xl lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- menu -->
+                <div class="menu flex">
+                    <ul class="text-lg font-medium">
+                        <li class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="../index.html">Home</a></li>
+                        <li class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="./products.html">Products</a></li>
+                        <li class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="./about.html">About</a></li>
+                        <li class="active p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- icons too but is hidden in phone -->
+                <div class="hide-icon-mb flex items-center">
+                    <div>
+                        <a href="./favorite.html">
+                            <span class="text-2xl mr-3 text-red-500 hover:scale-150 cursor-pointer"><i class="fa-solid fa-heart"></i></span>
+                        </a>
+                        <span class="text-2xl text-gray-700 relative">
+                            <span class="p-1 bg-red-600 absolute -right-1 rounded-full"></span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+                    </div>
+                    <div class="user-img h-14 w-14 border-4 border-teal-600 rounded-full ml-9 overflow-hidden">
+                        <a href="./auth/login.html">
+                            <img src="./../source/img/149071.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Form -->
+        <div class="overflow-hidden bg-[#45B1B2] w-[82%] lg:w-[60%] mx-auto my-[50px] rounded-md  shadow-lg">
+            <img class="w-[100px] ml-[10px]" src="../source/img/logo_shoes-removebg-preview.png" alt="logo">
+            <div class="flex items-center justify-center my-10 lg:mt-[-40px]">
+                <div class="bg-white rounded-full flex items-center justify-center w-[200px] h-[200px] lg:w-[220px] lg:h-[220px] ">
+                    <img  class="scale-[1.75] relative right-8 bottom-3 -rotate-45" src="../source/img/AIR+MAX+contact.png" alt="Shoes">
+                </div>
+            </div>
+            <h1 class="text-white text-center text-3xl font-bold pb-10 ">Contact Us</h1>
+            <div class="bg-white w-full  mx-auto rounded-md">
+                <form action="" class="w-full p-6">
+                    <div class="flex gap-3 justify-between">
+                        <div class="relative my-5 w-full">
+                            <svg class="absolute top-3 left-3 lg:left-4 w-4 h-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                            </svg>
+                            <input id="name" class="border border-gray-400 rounded px-3 py-2 w-full pl-10 focus:outline-none" type="text" placeholder="Full Name">
+                        </div>
+                        <div class="relative my-5 w-full">
+                            <svg class="absolute top-3.5 left-3 lg:left-4 w-4 h-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                            </svg>
+                            <input id="email" class=" border border-gray-400 rounded px-3 py-2 w-full pl-10 focus:outline-none" type="text" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="relative my-5">
+                        <svg class="absolute  top-3 left-3 lg:left-4 w-4 h-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M307 34.8c-11.5 5.1-19 16.6-19 29.2l0 64-112 0C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96l96 0 0 64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"/>
+                        </svg>
+                        <input id="subject" class="border border-gray-400 rounded py-2 px-3 mb-5 w-full pl-10 focus:outline-none" type="text" placeholder="Subject">
+                    </div>
+                    <div class="relative my-5">
+                        <svg class="absolute  top-3.5 left-3 lg:left-4 w-4 h-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l96 0 0 80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416 448 416c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0z"/>
+                        </svg>
+                        <textarea id="message" class="border border-gray-400 rounded px-3 h-52 py-2 pl-10  w-full focus:outline-none resize-none" name="" id="" placeholder="Message"></textarea>
+                    </div>
+                    <button class="bg-[#45B1B2] text-white rounded px-5 py-1 ml-auto mb-5 block transition-all duration-[200ms] cursor-pointer hover:scale-[1.05] hover:bg-[#205252]" value="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Media contact -->
+        <div class=" lg:grid grid-cols-3 gap-8 w-[82%] lg:full mx-auto mb-16">
+            <div class="relative bg-[#45B1B2] pt-5 w-full mx-auto my-[50px] rounded-md p-4 min-h-44 shadow-2xl transition-all duration-[200ms] cursor-pointer hover:scale-[1.05] hover:bg-white">
+                <div class="flex lg:block xl:flex text-left lg:text-center xl:text-left  gap-4 items-center">
+                    <svg class=" w-9 h-9 lg:mx-auto xl:mx-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+                    </svg>
+                    <p class="text-center">0525 477 566</p>
+                </div>
+                <p class="mt-10 ml-5">Pour toute demande d'information ou assistance.</p>
+            </div>
+            <div class="relative bg-white pt-5 text-black w-full mx-auto my-[50px] rounded-md p-4 min-h-44 shadow-2xl transition-all duration-[200ms] cursor-pointer hover:scale-[1.05]">
+                <div class="flex lg:block xl:flex text-left lg:text-center xl:text-left  gap-4 items-center">
+                    <svg class=" w-9 h-9 lg:mx-auto xl:mx-0"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/>
+                    </svg>
+                    <p class="text-center">myshoes@gmail.com</p>
+                </div>
+                <p class="mt-10 ml-5">Notre équipe vous répondra dans les plus brefs délais.</p>
+            </div>
+            <div class="relative bg-[#45B1B2] pt-5 w-full  mx-auto my-[50px] rounded-md p-4 min-h-44 shadow-2xl transition-all duration-[200ms] cursor-pointer hover:scale-[1.05] hover:bg-white">
+                <div class="flex lg:block xl:flex text-left lg:text-center xl:text-left  gap-4 items-center">
+                    <svg class=" w-9 h-9 lg:mx-auto xl:mx-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152l0 270.8c0 9.8-6 18.6-15.1 22.3L416 503l0-302.6zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 13.7 9.6 20.6l0 251.4L32.9 502.7C17.1 509 0 497.4 0 480.4L0 209.6c0-9.8 6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77l0 249.3L192 449.4 192 255c20.5 31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/>
+                    </svg>
+                    <p class="text-center">Safi Maroc</p>
+                </div>
+                <p class="mt-10 ml-5">Nous serons ravis de vous accueillir à notre adresse.</p>
+            </div>
+        </div>
+
+        <!--Contact Map -->
+        <div class="flex gap-6 justify-center transition-all duration-[200ms] cursor-pointer hover:scale-[1.05]">
+            <svg class=" w-9 h-9 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+            </svg>
+            <p class="text-[#45B1B2] font-extrabold w-72">Looking for us? Here’s a map with our location for your convenience.</p>
+        </div>
+        <div>
+            <iframe class="w-[82%] lg:full mx-auto my-16 rounded-md shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.6914680022987!2d-9.237781860083066!3d32.292916785276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac21002d578a85%3A0xde89b38e6d302490!2sYouCode%20(Bureau%20d&#39;inscription)!5e0!3m2!1sfr!2sma!4v1731400103144!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="flex items-center justify-between pb-2 pt-5 border-t border-gray-300 mt-10">
+                <img width="80px" src="../source/img/logo_shoes-removebg-preview__1_-Photoroom-removebg-preview.png" alt="">
+                
+                <!-- nav footer -->
+                <div class="lg:flex items-center text-center">
+                    <h3 class="text-2xl font-semibold mb-4 lg:mb-1 lg:mr-7">Follow us</h3>
+                    <div class="text-3xl flex">
+                        <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                            <img width="37px"  src="../source/img/social-media-img/facebook.svg" alt="">
+                        </a>
+                        <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                            <img width="35px"  src="../source/img/social-media-img/instagram.svg" alt="">
+                        </a>
+                        <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                            <img width="35px"  src="../source/img/social-media-img/youtube.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:flex justify-between mt-16">
+                <!-- information contact -->
+                 <div class="text-center lg:text-start font-medium">
+                    <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Contact</h2>
+                    <div class="mb-4 lg:flex">
+                        <span class="mr-3 text-teal-600"><i class="fa-solid fa-phone"></i></span>
+                        <p>0709123302</p>
+                    </div>
+                    <div class="mb-4 lg:flex">
+                        <span class="mr-3 text-teal-600"><i class="fa-solid fa-envelope"></i></span>
+                        <p>shoesstore@gmail.com</p>
+                    </div>
+                    <div class=" lg:flex">
+                        <span class="mr-3 text-teal-600"><i class="fa-solid fa-location-dot"></i></span>
+                        <p>46000, Safi Morocco</p>
+                    </div>
+                 </div>
+    
+                 <!-- menu -->
+                 <div class="text-center lg:text-start font-medium mt-9 leading-7 lg:mt-0">
+                    <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Menu</h2>
+                    <ul class="lg:block">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                 </div>
+    
+                 <!-- categories -->
+                 <div class="text-center lg:text-start font-medium mt-9 leading-7 lg:mt-0">
+                    <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Category</h2>
+                    <p>Men</p>
+                    <p>Women</p>
+                    <p>Work & Safety</p>
+                    <p>Runing</p>
+                    <p>Sport</p>
+                 </div>
+            </div>
+
+            <div class="border-t p-2 mt-6 text-center mx-auto w-[90%]">
+                <p>&copy; 2024 shoes store, All right reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../source/js/main.js"></script>
+</body>
+</html>

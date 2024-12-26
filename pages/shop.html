@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../source/css/style.css">
+    <title>Shop Shoes</title>
+    
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+<style>
+      @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        .animate-scroll {
+            animation: scroll 20s linear infinite;
+        }
+        
+        /* Pause animation on hover */
+        .animate-scroll:hover {
+            animation-play-state: paused; 
+        }
+         
+        /* Add smooth scrolling */
+         .animate-scroll {
+            scroll-behavior: smooth;
+        } 
+
+
+        .thumbnail-item.active {
+   
+   border-radius: 0.5rem;
+}
+
+.main-image-container img.side-view {
+   transform: rotate(0deg) !important;
+   width: 100% !important;
+   height: 100% !important;
+   object-fit: contain !important;
+}
+</style>
+</head>
+<body class="bg-[#effffd]">
+
+    <div class="w-[92%] lg:w-[82%] mx-auto">
+
+        <!-- header -->
+        <header>
+            <div class="nav border-b border-gray-300">
+                <div class="hide-icon flex justify-between items-center">
+
+                    <!-- logo -->
+                    <a href="../index.html">
+                        <img width="100px" src="../source/img/logo_shoes-removebg-preview__1_-Photoroom-removebg-preview.png" alt="">
+                    </a>
+
+                    <!-- icons favorite, shop and user image but is hidden in desktop -->
+                    <div class="flex items-center">
+                        <div class="mr-10 lg:hidden">
+                            <a href="./favorite.html">
+                                <span class="text-2xl mr-3 text-red-500 hover:scale-150 cursor-pointer"><i class="fa-solid fa-heart"></i></span>
+                            </a>
+                            <span class="text-2xl text-gray-700 relative">
+                                <span class="p-1 bg-red-600 absolute -right-1 rounded-full"></span>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </span>
+                        </div>
+                        <div class="toggle text-4xl lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- menu -->
+                <div class="menu flex">
+                    <ul class="text-lg font-medium">
+                        <li class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="../index.html">Home</a></li>
+                        <li class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="../pages/products.html">Products</a></li>
+                        <li class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="../pages/about.html">About</a></li>
+                        <li class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- icons too but is hidden in phone -->
+                <div class="hide-icon-mb flex items-center">
+                    <div>
+                        <a href="./favorite.html">
+                            <span class="text-2xl mr-3 text-red-500 hover:scale-150 cursor-pointer"><i class="fa-solid fa-heart"></i></span>
+                        </a>
+                        <span class="text-2xl text-gray-700 relative">
+                            <span class="p-1 bg-red-600 absolute -right-1 rounded-full"></span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+                    </div>
+                    <div class="user-img h-14 w-14 border-4 border-teal-600 rounded-full ml-9">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+        <div class=" h-[100px] w-full bg-gradient-to-r from-teal-500 to-gray-500 sm:h-[200px]"></div>
+
+        <div class="container flex flex-wrap justify-center content-center gap-14 md:ml-24 align-middle items-center lg:flex-nowrap">
+            <div class="M1 shoe-showcase w-full sm:max-w-[680px] lg:p-6">
+                <!-- Main Image Container -->
+                <div class="main-image-container w-full h-[370px] sm:h-auto sm:mb-6 bg-gradient-to-b from-gray-200 to-white sm:rounded-2xl flex items-center justify-center sm:pr-0">
+                    <img id="mainImage" src="../sneakers/sneaker2-removebg-preview.png" alt="Nike Air Max"
+                         class="h-[320px] sm:h-[420px] object-contain transform -rotate-[39deg] transition-all duration-500 self-center justify-start">
+                </div>
+            
+                <!-- Thumbnails Strip -->
+                <div class="hideScroll sm:h-auto thumbnails-strip w-full overflow-scroll overflow-x-scroll bg-gradient-to-b from-transparent to-gray-900 rounded-xl sm:p-2 flex sm:h-[105px] gap-2">
+                    <div class="thumbnail-item object-contain cursor-pointer active" data-view="side">
+                        <div class="thumbnail-container object-contain sm:w-[126px] sm:h-[95px] bg-gray-100 rounded-lg flex items-center justify-center scroll-snap-start">
+                            <img src="../Nike API/SNEAKER1/COLOR3/SIDE VIUES/custom-nike-air-max-95-by-you (1).png" alt="Side View" 
+                                 class="w-[90px] object-contain transform">
+                        </div>
+                    </div>
+                    <div class="thumbnail-item object-contain cursor-pointer active" data-view="side">
+                        <div class="thumbnail-container object-contain sm:w-[126px] sm:h-[95px] bg-gray-100 rounded-lg flex items-center justify-center scroll-snap-start">
+                            <img src="../source/api/Images/Nike Air Max 95/Color1/Side Views/Side1.png" alt="Side View" 
+                                 class="w-[90px] object-contain transform">
+                        </div>
+                    </div>
+                    <div class="thumbnail-item object-contain cursor-pointer active" data-view="side">
+                        <div class="thumbnail-container object-contain sm:w-[126px] sm:h-[95px] bg-gray-100 rounded-lg flex items-center justify-center scroll-snap-start">
+                            <img src="../source/api/Images/Nike Air Max 95/Color3/Side Views/Side4.png" alt="Side View" 
+                                 class="w-[90px] object-contain transform">
+                        </div>
+                    </div>
+                    <div class="thumbnail-item object-contain cursor-pointer active" data-view="side">
+                        <div class="thumbnail-container object-contain sm:w-[126px] sm:h-[95px] bg-gray-100 rounded-lg flex items-center justify-center scroll-snap-start">
+                            <img src="../source/api/Images/Nike Air Max 95/Color1/Side Views/Side1.png" alt="Side View" 
+                                 class="w-[90px] object-contain transform">
+                        </div>
+                    </div>
+                    <div class="thumbnail-item object-contain cursor-pointer active" data-view="side">
+                        <div class="thumbnail-container object-contain sm:w-[126px] sm:h-[95px] bg-gray-100 rounded-lg flex items-center justify-center scroll-snap-start">
+                            <img src="../source/api/Images/Nike Air Max 95/Color1/Side Views/Side1.png" alt="Side View" 
+                                 class="w-[90px] object-contain transform">
+                        </div>
+                    </div>
+                    <div class="thumbnail-item object-contain cursor-pointer active" data-view="side">
+                        <div class="thumbnail-container object-contain sm:w-[126px] sm:h-[95px] bg-gray-100 rounded-lg flex items-center justify-center scroll-snap-start">
+                            <img src="../sneakers/custom-nike-air-max-95-by-you.png" alt="Side View" 
+                                 class="w-[90px] object-contain transform">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="product-container bg-white rounded-3xl shadow-lg p-8 w-[494px] h-[580px] relative grid grid-cols-2 ">
+                <!-- Image Carousel -->
+                <div class="image-carousel flex flex-col gap-4 mb-2 justify-center">
+                    <!-- <div class="main-image-container h-[280px] flex justify-center items-center">
+                        <img id="mainImage" src="./sneakers/sneaker2-removebg-preview.png" alt="Nike Air Max" class="h-[200px] object-contain transition-all duration-300">
+                    </div> -->
+                    <div class=" flex  flex-col justify-center gap-2">
+                        <div
+                            class="w-[178px] h-[153px] sm:w-[140px] sm:h-[120px] bg-[radial-gradient(circle,_rgba(200,200,200,1.5)_0%,_rgba(255,255,255,0.5)_70%)] flex justify-center items-center self-center ">
+                            <img src="..." id="colors" alt="Nike Air Max View 1"
+    class="h-[200px] object-contain thumbnail-card cursor-pointer transition-all duration-300 active"
+                                style="transform: rotate(-40deg) scale(0.85);">
+                        </div>
+                        <div 
+                            class="w-[178px] h-[153px] sm:w-[140px] sm:h-[120px]  flex justify-center items-center self-center bg-[radial-gradient(circle,_rgba(200,200,200,1.5)_0%,_rgba(27,157,159,0.29)_30%,_rgba(255,255,255,0.5)_70%)]   ">
+                            <img src="./../source/img/img-page-shop/sneakers/simples.png" id="colors" alt="Nike Air Max View 1"
+                                class="h-[200px] object-contain thumbnail-card cursor-pointer transition-all duration-300 active "
+                                style="transform: rotate(-40deg) scale(0.85);">
+                        </div>
+                        <div 
+                            class="w-[146px] h-[124px] sm:w-[106px] sm:h-[97px] bg-[radial-gradient(circle,_rgba(200,200,200,1.5)_0%,_rgba(255,255,255,0.5)_70%)] flex justify-center items-center self-center ">
+                            <img src="../sneakers/sneaker2-removebg-preview.png" alt="Nike Air Max View 1"id="colors"
+                                class="h-[200px] object-contain thumbnail-card cursor-pointer transition-all duration-300 active "
+                                style="transform: rotate(-40deg) scale(0.85);">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product Info -->
+                <div class="product-info space-y-4 overflow-hidden">
+                    <div class="text-sm text-gray-600">Article pour les membres</div>
+                    <h1 class="text-sm lg:text-xl text-wrap font-semibold">Nike Air Max 95 By You</h1>
+                    <div class="overflow-hidden h-1/5">
+                        <h2 class="text-xs lg:text-2xl w-full text-responsive  whitespace-wrap  text-ellipsis">Chaussure
+                            personnalisable pour Homme</h2>
+                    </div>
+                    <div class="flex flex-col  justify-between mt-4">
+                        <div class="flex  gap-2">
+                            <span>1 UNIT</span>
+                            <div class="ml-auto flex items-center">
+                                <span class="text-lg font-bold">4.5</span>
+                                <svg class=" ml-auto w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-center  gap-2">
+                            <span id="price" class="text-xl font-bold">$18.00</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart fill-teal-400 ml-auto flex w-4 h-4 cursor-pointer" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="quantity-selector flex items-center gap-2 my-4">
+                        <button
+                            class="quantity-btn decrease w-8 h-8 bg-gray-100 rounded-md flex items-center justify-center hover:bg-gray-200 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M5 12h14" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+    
+                        <input type="number" value="1"
+                            class="w-12 h-8  text-center border rounded-md focus:outline-none focus:border-teal-500" min="1"
+                            max="99" readonly>
+    
+                        <button
+                            class="quantity-btn increase w-8 h-8 bg-gray-100 rounded-md flex items-center justify-center hover:bg-gray-200 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 5v14m-7-7h14" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class=" flex gap-2 ">
+                        <button class=" flex-1 py-1 px-4 bg-black text-white  ">
+                            Homme
+                        </button>
+                        <button class=" flex-1 py-1 px-4 bg-black text-white  ">
+                            Femme
+                        </button>
+                    </div>
+    
+                    <!-- Size Selector -->
+                    <div class="size-selector grid grid-cols-6 gap-2 mt-4">
+                        <button class="size-btn p-auto border rounded-sm hover:bg-teal-500">38</button>
+                        <button class="size-btn p-auto border rounded-sm hover:bg-teal-500">39</button>
+                        <button class="size-btn p-auto border rounded-sm hover:border-teal-500">40</button>
+                        <button class="size-btn p-auto border rounded-sm hover:border-teal-500">41</button>
+                        <button class="size-btn p-auto border rounded-sm hover:border-teal-500">42</button>
+                        <button class="size-btn p-auto border rounded-sm hover:border-teal-500">43</button>
+                        <button class="size-btn p-auto border rounded-sm hover:border-teal-500">41</button>
+                        <button class="size-btn p-auto border rounded-sm hover:border-teal-500">42</button>
+                        <button class="size-btn p-auto border rounded-sm hover:border-teal-500">43</button>
+                    </div>
+    
+                    <!-- Add to Cart Button -->
+                    <button class=" w-full bg-teal-500 text-white py-3 rounded-xl hover:bg-teal-600 transition-colors mt-6">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+<div class="p-8 mt-20">
+    <h1 class="text-3xl">SIMILLARS</h1>
+</div>
+<div class="w-full bg-gradient-to-r from-teal-500 to-gray-500 overflow-hidden py-4">
+    <div  class="animate-scroll flex gap-5" id="scrollContainer"  >
+       
+    </div>
+</div>
+
+<div class="w-full md:px-28 md:mt-16 mt-12 ">
+
+    <div class="bg-slate-200 w-fill h-[400px] md:h-[400px] rounded-lg drop-shadow-xl shadow-2xl ">
+        <div class="col-span-3 pl-3 pt-3 text-2xl">
+            <h1>DETAILS</h1>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 h-[270px] px-4">
+            <div class="pl-3 border-r-2 border-r-teal-600 grid grid-rows-4 text-lg pt-7">
+                <h2>Style</h2>
+
+                <h2> Colorway</h2>
+
+                <h2> Retail Price</h2>
+
+                <h2> Release Date</h2>
+
+            </div>
+            <div class="pl-3 grid grid-rows-4 border-r-2 md:border-r-teal-600 text-lg pt-7">
+                <h2>Style</h2>
+
+                <h2> Colorway</h2>
+
+                <h2> Retail Price</h2>
+
+                <h2> Release Date</h2>
+
+            </div>
+            <div class="pl-3 pt-7 col-span-2 border-t-2 mt-4 md:mt-0 border-t-teal-600 md:border-t-0 md:col-span-1">
+                <h2>Style</h2>
+
+                <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ad facere
+                    repudiandae quis qui fugit error sunt dicta recusandae, veritatis consequatur inventore eum
+                    optio culpa! Dolores laudantium repudiandae ratione veritatis.</p>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="p-6 text-4xl mt-16">
+    <h1> VIEWED RECENTLY </h1>
+</div>
+<div class="px-6">
+    <div class="added-products grid grid-cols-2 md:grid-cols-3 w-full gap-14">
+
+    </div>
+</div>
+        
+    <!-- footer -->
+    <div class="w-[92%] lg:w-[82%] mx-auto">
+    <footer class="w-full">
+        <div class="flex items-center justify-between pb-2 pt-5 border-t border-gray-300 mt-10">
+            <img width="80px" src="../source/img/logo_shoes-removebg-preview__1_-Photoroom-removebg-preview.png" alt="">
+            
+            <!-- nav footer -->
+            <div class="lg:flex items-center text-center">
+                <h3 class="text-2xl font-semibold mb-4 lg:mb-1 lg:mr-7">Follow us</h3>
+                <div class="text-3xl flex">
+                    <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                        <img width="37px"  src="../source/img/social-media-img/facebook.svg" alt="">
+                    </a>
+                    <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                        <img width="35px"  src="../source/img/social-media-img/instagram.svg" alt="">
+                    </a>
+                    <a class="mr-4 hover:scale-110 transition-all hover:transition-all" href="#">
+                        <img width="35px"  src="../source/img/social-media-img/youtube.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="lg:flex justify-between mt-16">
+            <!-- information contact -->
+                <div class="text-center lg:text-start font-medium">
+                <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Contact</h2>
+                <div class="mb-4 lg:flex">
+                    <span class="mr-3 text-teal-600"><i class="fa-solid fa-phone"></i></span>
+                    <p>0709123302</p>
+                </div>
+                <div class="mb-4 lg:flex">
+                    <span class="mr-3 text-teal-600"><i class="fa-solid fa-envelope"></i></span>
+                    <p>shoesstore@gmail.com</p>
+                </div>
+                <div class=" lg:flex">
+                    <span class="mr-3 text-teal-600"><i class="fa-solid fa-location-dot"></i></span>
+                    <p>46000, Safi Morocco</p>
+                </div>
+                </div>
+
+                <!-- menu -->
+                <div class="text-center lg:text-start font-medium mt-9 leading-7 lg:mt-0">
+                <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Menu</h2>
+                <ul class="lg:block">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                </div>
+
+                <!-- categories -->
+                <div class="text-center lg:text-start font-medium mt-9 leading-7 lg:mt-0">
+                <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Category</h2>
+                <p>Men</p>
+                <p>Women</p>
+                <p>Work & Safety</p>
+                <p>Runing</p>
+                <p>Sport</p>
+                </div>
+        </div>
+
+        <div class="border-t p-2 mt-6 text-center mx-auto w-[90%]">
+            <p>&copy; 2024 shoes store, All right reserved</p>
+        </div>
+    </footer>
+    </div>
+
+    
+    <script src="../source/js/main.js"></script>
+    <script src="../source/js/shop.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainImage = document.getElementById('mainImage');
+            const thumbnails = document.querySelectorAll('.thumbnail-item');
+        
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', function() {
+                  
+                    // Remove active class from all thumbnails
+                    thumbnails.forEach(t =>  mainImage.src = this.querySelector('img').src);
+                   
+                    
+                    // Add active class to clicked thumbnail
+                    // this.classList.add('active');
+        
+                    // Check if it's a side view
+                    if (this.dataset.view === 'side') {
+                        mainImage.classList.add('side-view');
+                    } else {
+                        mainImage.classList.remove('side-view');
+                    }
+                });
+            });
+        });
+        </script>
+</body>
+</html>

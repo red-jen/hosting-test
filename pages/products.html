@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../source/css/style.css" />
+    <link rel="stylesheet" href="../source/css/style-home/style.css"/>
+    <link rel="stylesheet" href="../source/css/style-products/style.css"/>
+    <link rel="stylesheet" href="../source/css/style-favorite/style.css"/>
+    <link rel="stylesheet" href="../source/css/card-style/style.css">
+
+    <title>Shop Shoes</title>
+
+    <!-- script style tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#effffd] p-0 m-0 overflow-x-hidden">
+    <div class="w-[92%] lg:w-[82%] mx-auto">
+      <!-- header -->
+      <header>
+        <div class="nav border-b border-gray-300">
+          <div class="hide-icon flex justify-between items-center">
+            <!-- logo -->
+            <a href="../index.html">
+              <img
+                width="100px"
+                src="../source/img/logo_shoes-removebg-preview__1_-Photoroom-removebg-preview.png"
+                alt=""
+              />
+            </a>
+
+            <!-- icons favorite, shop and user image but is hidden in desktop -->
+            <div class="flex items-center">
+              <div class="mr-10 lg:hidden">
+                <a href="./favorite.html">
+                  <span class="text-2xl mr-3 text-red-500 hover:scale-150 cursor-pointer"><i class="fa-solid fa-heart"></i></span>
+                </a>
+                <span class="btn-shop text-2xl text-gray-700 relative">
+                  <span
+                    class="p-1 bg-red-600 absolute -right-1 rounded-full"
+                  ></span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </span>
+              </div>
+              <div class="toggle text-4xl lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- menu -->
+          <div class="menu flex">
+            <ul class="text-lg font-medium">
+              <li
+                class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"
+              >
+                <a href="../index.html">Home</a>
+              </li>
+              <li
+                class="active p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"
+              >
+                <a href="products.html">Products</a>
+              </li>
+              <li
+                class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"
+              >
+                <a href="about.html">About</a>
+              </li>
+              <li
+                class="p-1 hover:text-teal-600 transition-all hover:transition-all rounded w-full"
+              >
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- icons too but is hidden in phone -->
+          <div class="hide-icon-mb flex items-center">
+            <div>
+              <a href="./favorite.html">
+                <span class="text-2xl mr-3 text-red-500 hover:scale-150 cursor-pointer"><i class="fa-solid fa-heart"></i></span>
+              </a>
+              <span class="btn-shop text-2xl text-gray-700 relative">
+                <span
+                  class="p-1 bg-red-600 absolute -right-1 rounded-full"
+                ></span>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </span>
+            </div>
+            <div class="user-img h-14 w-14 border-4 border-teal-600 rounded-full ml-9 overflow-hidden">
+                <a href="./auth/login.html">
+                  <img src="./../source/img/149071.png" alt="">
+                </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- modal show cards -->
+      <div class="bg-[#fbf3eb] border border-teal-400 p-2 text-black overflow-hidden rounded-md show-cards">
+        
+      </div>
+
+      <!------ section Hero ------>
+      <div class="hero overflow-hidden">
+        <section
+          class="hero-pro none flex-col justify-center items-center mt-[50px] lg:flex-row"
+        >
+          <div
+            class="relative local grid grid-cols-1 justify-center xl:grid-cols-[30%_67%] gap-28 w-full items-start xl:justify-around"
+          >
+            <div class="title-4 p-6 text-center xl:text-start">
+              <h1
+                class="lg:mb-[80px] text-5xl mb-4 font-extrabold text-black tracking-[15px]"
+              >
+                MANS
+              </h1>
+              <h1
+                class="lg:mb-[80px] hh1 text-5xl mb-4 font-extrabold tracking-[15px]"
+              >
+                FOOTWEAR
+              </h1>
+              <h1
+                class="lg:mb-[80px] text-5xl mb-4 font-extrabold text-black tracking-[15px]"
+              >
+                SHOES
+              </h1>
+            </div>
+            <div class="absolute right-0 bg-gr-300 lml hidden xl:grid grid-rows-[15%_60%_15%] h-[60vh]">
+              <h1
+                class="hh1 relative bottom-3 right-12  prom text-6xl mb-4 font-extrabold h-[200px] tracking-[15px] z-10 ml-[350px]"
+              >
+                50% <br />
+                OFF
+              </h1>
+
+              <img
+                src="../source/img/product_1-removebg-preview.png"
+                class="imghr lg:z-10 lg:-rotate-[40deg] lg:w-[70%] ml-[100px] mt-[-200px] w-[50%]"
+                alt=""
+                id="img"
+              />
+
+              <h1
+                class="hh1 airmax lg: text-5xl mb-4 font-extrabold w-[50%] tracking-[10px] rotate-2 ml-[480px] relative right-14 pr-1"
+              >
+                AIR MAX
+              </h1>
+            </div>
+            <button
+              class="mt-[-150px] lg:m-[380px_0_100px_-460px] lg:w-[350px] lg:h-12 jjj font-medium w-[100%] text-2xl text-slate-100 h-16 rounded-[40px] transition-all duration-[300ms] hover:bg-teal-800 hover:text-stone-200 hover:scale-[1.03]"
+            ><a href="#serchpage">Shop Now</a>
+              
+            </button>
+          </div>
+          <!------------------>
+
+      
+        </section>
+      </div>
+
+       <!----- Fonetre Seach -------->
+       <section id="serchpage" class="uuu flex flex-col lg:flex-row justify-around items-center">
+        <div class="prod">
+        <h1
+          class="ml-[-20px] text-6xl mb-4 mt-[100px] font-extrabold text-black tracking-[5px]"
+        >
+          Products
+        </h1>
+      </div>
+      <div
+        id="searcht"
+        class="mt-6 lg:mt-24 cursor-pointer flex justify-center items-center rounded-lg shadow-lg h-[40px] w-3/5 bg-white"
+      >
+        <input onkeyup="searchdata(this.value)" id="search-input"
+          class="bg-transparent m-0 w-[93%] outline-none rounded-none text-black px-4"
+          type="text"
+          placeholder="Search for Products"
+        />
+   
+          <i class="fas fa-search fonts text-stone-500 text-xl mr-3" id="search"></i>
+       
+      </div>
+    </section>
+    <!--section for cards and sliders product ------>
+
+    <section class="pdk grid grid-cols-1 xl:grid-cols-[28%_70%] gap-10 h-auto">
+      <div class="h-[45vh] mt-[44px] shadow-md">
+        <!-- Sort by section -->
+        <div class="mb-6 flex items-center justify-around">
+          <label
+            class="block font-thin text-2xl mb-2 ml-5 text-black"
+            for="sort"
+            >sort by :</label
+          >
+          <select
+            id="sort"
+            class="w-[60%] h-[40px] mt-2 p-2 rounded-lg shadow-md bg-white text-gray-800 text-xl text-center font-thin border-gray-200 focus:outline-none"
+          >
+            <option value="featured">Featured</option>
+            <option value="alpha">Alphabite A-Z</option>
+            <option value="lowhight">Price: Low to High</option>
+            <option value="hightlow">Price: High to Low</option>
+          </select>
+        </div>
+        <hr class="w-[80%] ml-8" />
+        <!-- Price -->
+        <div class="mb-6">
+          <div class="flex justify-between items-center">
+            <h2 class="block font-thin text-2xl mb-2 ml-8 text-black">
+              Price
+            </h2>
+            <button id="rest" class="text-[16px] mr-5 text-black">Reset</button>
+          </div>
+          <p class="text-xl font-thin text-gray-500 ml-8 mb-2">
+            The highest price is
+            <span class="text-black font-medium" id="maxpriceshow">$52.00</span>
+          </p>
+          <div class="flex space-x-2 mt-5">
+            <div class="ml-8">
+              <label class="text-[18px]">Min Price :</label>
+              <input id="minprice"
+                type="number"
+                class="w-[80%] mt-1 p-2 border border-gray-200 rounded-lg shadow-sm"
+                placeholder="0"
+              />
+            </div>
+            <div>
+              <label class="text-[18px]">Max Price :</label>
+              <input id="maxprice"
+                type="number"
+                class="w-[80%] mt-1 p-2 border border-gray-200 rounded-lg shadow-sm"
+                placeholder="52.00"
+              />
+            </div>
+          </div>
+        </div>
+        <hr class="w-[80%] ml-8" />
+
+
+        <!-- </div> -->
+      </div>
+      <!---product -------->
+      <div>
+        <!---------- navbar --------------->
+        <div class="p-[5px_0]">
+          <div class="p-[5px_0]">
+            <ul
+              class="malk *:p-2 md:*:p-0 flex flex-col md:flex-row justify-around p-[0_0] text-[20px] font-medium text-neutral-600 border-b-[1px] pb-5 md:pb-0 border-teal-900"
+            >
+              <li onclick="Fillter('all')" 
+                class="cursor-pointer naval m-[0_17px] list-none  hover:text-teal-900 transition-all duration-[300ms] hover:scale-[1.03]"
+              >
+                All
+              </li>
+              <li onclick="Fillter('Men')"
+                class="cursor-pointer naval m-[0_17px] list-none  hover:text-teal-900 transition-all duration-[300ms] hover:scale-[1.03]"
+              >
+                Men
+              </li>
+              <li onclick="Fillter('Women')"
+                class="cursor-pointer naval m-[0_17px] list-none  hover:text-teal-900 transition-all duration-[300ms] hover:scale-[1.03]"
+              >
+                Women
+              </li>
+              <li onclick="Fillter('Sport')"
+                class="cursor-pointer naval m-[0_17px] list-none  hover:text-teal-900 transition-all duration-[300ms] hover:scale-[1.03]"
+              >
+                Sport
+              </li>
+              <li onclick="Fillter('Running')"
+                class="cursor-pointer naval m-[0_17px] list-none border-teal-900 hover:text-teal-900 transition-all duration-[300ms] hover:scale-[1.03]"
+              >
+                Running
+              </li>
+              <li onclick="Fillter('Work & Safety')"
+                class="cursor-pointer naval m-[0_17px] list-none border-teal-900 hover:text-teal-900 transition-all duration-[300ms] hover:scale-[1.03]  "
+              >
+                Work & Safety
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!------------- Product ---------->
+        <div id="container" class="h-auto lkml grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[30%_30%_30%] gap-10 justify-center mt-5 " id="Prudacts">
+          
+        </div>
+        <!-------------- Page Croasel ------------>
+        <!-------------- Page Croasel ------------>
+        <div id="pagination" class="flex items-center justify-center space-x-2 mt-10">
+          <!-- Page Numbers -->
+
+          <button onclick="changepage(0)"
+            class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-teal-500 text-teal-500 text-xl font-semibold"
+          >
+            1
+          </button>
+          <button onclick="changepage(1)"
+            class="w-12 h-12 text-xl flex items-center justify-center text-gray-700 font-semibold hover:text-teal-500"
+          >
+            2
+          </button>
+          <button onclick="changepage(2)"
+            class="w-12 h-12 text-xl flex items-center justify-center text-gray-700 font-semibold hover:text-teal-500"
+          >
+            3
+          </button>
+          <button onclick="changepage(3)"
+            class="w-12 h-12 text-xlflex items-center justify-center text-gray-700 font-semibold hover:text-teal-500"
+          >
+            4
+          </button>
+          <button onclick="changepage(4)"
+            class="w-12 h-12 text-xl flex items-center justify-center text-gray-700 font-semibold hover:text-teal-500"
+          >
+            5
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!------------ Notification ------------------>
+    <div
+  id="notification"
+  class="fixed top-4 right-4 bg-teal-500 text-white py-2 px-4 rounded shadow-lg hidden text-sm"
+></div>
+
+    <!---------- Casoual Product ---------->
+    <section class="uuu flex flex-col justify-around items-center">
+      <div class="prod mb-10 mt-0">
+        <h1
+          class="ml-[-20px] text-6xl mb-4 mt-[100px] font-extrabold text-black tracking-[5px]"
+        >
+          Casual Shoes
+        </h1>
+      </div>
+      <div class="w-full flex justify-around items-center cardscrol">
+        <button id="leftsc"
+          class="w-12 h-12 mr-5 text-xl flex items-center rotate-180 justify-center bg-teal-500 text-white rounded-full hover:bg-teal-600 hover:scale-[1.05]"
+        >
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+        <div id="casual" class="flex  card items-center justify-evenly px-5 w-[80%] gap-8 overflow-x-scroll" id="card">
+        </div>
+        <button id="rightsc" class="w-12 h-12 ml-5 text-xl flex items-center justify-center bg-teal-500 text-white rounded-full hover:bg-teal-600 hover:scale-[1.05]">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </section>
+ <!-- section partners -->
+ <section>
+  <div class="bg-white mt-20 p-2 overflow-hidden shadow-[1px_-1px_10px_#dddddd57]">
+      <div class="slider flex">
+          <img class="mr-20" width="100px" src="../source/img/img-page-home/logo-partners/puma.svg" alt="">
+          <img class="mr-20" width="100px" src="../source/img/img-page-home/logo-partners/nike.svg" alt="">
+          <img class="mr-20" width="100px" src="../source/img/img-page-home/logo-partners/adidas.svg" alt="">
+          <img class="mr-20" width="100px" src="../source/img/img-page-home/logo-partners/lacoste.svg" alt="">
+          <img class="mr-20" width="100px" src="../source/img/img-page-home/logo-partners/fila.svg" alt="">
+          <img class="mr-20" width="100px" src="../source/img/img-page-home/logo-partners/reebok.svg" alt="">
+          <img class="mr-20" width="100px" src="../source/img/img-page-home/logo-partners/puma.svg" alt="">
+          <img class="mr-20" width="100px" src="../source/img/img-page-home/logo-partners/nike.svg" alt="">
+          <img class="mr-20" width="100px" src="../source/img/img-page-home/logo-partners/adidas.svg" alt="">
+          <img class="mr-20" width="100px" src="../source/img/img-page-home/logo-partners/lacoste.svg" alt="">
+          <img class="mr-20" width="100px" src="../source/img/img-page-home/logo-partners/fila.svg" alt="">
+          <img class="mr-20" width="100px" src="../source/img/img-page-home/logo-partners/reebok.svg" alt="">
+      </div>
+  </div>
+</section>
+      <!-- footer -->
+      <footer>
+        <div
+          class="flex items-center justify-between pb-2 pt-5 border-t border-gray-300 mt-10"
+        >
+          <img
+            width="80px"
+            src="../source/img/logo_shoes-removebg-preview__1_-Photoroom-removebg-preview.png"
+            alt=""
+          />
+
+          <!-- nav footer -->
+          <div class="lg:flex items-center text-center">
+            <h3 class="text-2xl font-semibold mb-4 lg:mb-1 lg:mr-7">
+              Follow us
+            </h3>
+            <div class="text-3xl flex">
+              <a
+                class="mr-4 hover:scale-110 transition-all hover:transition-all"
+                href="#"
+              >
+                <img
+                  width="37px"
+                  src="../source/img/social-media-img/facebook.svg"
+                  alt=""
+                />
+              </a>
+              <a
+                class="mr-4 hover:scale-110 transition-all hover:transition-all"
+                href="#"
+              >
+                <img
+                  width="35px"
+                  src="../source/img/social-media-img/instagram.svg"
+                  alt=""
+                />
+              </a>
+              <a
+                class="mr-4 hover:scale-110 transition-all hover:transition-all"
+                href="#"
+              >
+                <img
+                  width="35px"
+                  src="../source/img/social-media-img/youtube.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:flex justify-between mt-16">
+          <!-- information contact -->
+          <div class="text-center lg:text-start font-medium">
+            <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Contact</h2>
+            <div class="mb-4 lg:flex">
+              <span class="mr-3 text-teal-600"
+                ><i class="fa-solid fa-phone"></i
+              ></span>
+              <p>0709123302</p>
+            </div>
+            <div class="mb-4 lg:flex">
+              <span class="mr-3 text-teal-600"
+                ><i class="fa-solid fa-envelope"></i
+              ></span>
+              <p>shoesstore@gmail.com</p>
+            </div>
+            <div class="lg:flex">
+              <span class="mr-3 text-teal-600"
+                ><i class="fa-solid fa-location-dot"></i
+              ></span>
+              <p>46000, Safi Morocco</p>
+            </div>
+          </div>
+
+          <!-- menu -->
+          <div
+            class="text-center lg:text-start font-medium mt-9 leading-7 lg:mt-0"
+          >
+            <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Menu</h2>
+            <ul class="lg:block">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- categories -->
+          <div
+            class="text-center lg:text-start font-medium mt-9 leading-7 lg:mt-0"
+          >
+            <h2 class="text-4xl font-semibold tracking-[3px] mb-6">Category</h2>
+            <p>Men</p>
+            <p>Women</p>
+            <p>Work & Safety</p>
+            <p>Runing</p>
+            <p>Sport</p>
+          </div>
+        </div>
+
+        <div class="border-t p-2 mt-6 text-center mx-auto w-[90%]">
+          <p>&copy; 2024 shoes store, All right reserved</p>
+        </div>
+      </footer>
+    </div>
+
+    <div id="alerts" class="fixed bottom-10 left-10 flex flex-col-reverse">
+
+    </div>
+    <!-- <div class="loader fixed top-0 left-0 w-full h-full flex justify-center items-center bg-white"></div> -->
+    <script src="../source/js/main.js"></script>
+    <script src="../source/js/affichageProduct.js">
+    </script><script src="../source/js/product.js"></script>
+    <script src="../source/js/addToCard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+@media screen and (max-width: 1023px) {
+    .menu {
+        height: 0;
+        transition: all 0.3s linear;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hide-icon-mb span {
+        display: none;
+    }
+
+    .user-img {
+        display: none;
+    }
+
+    .menu li:hover {
+        background-color: rgb(20 184 166);
+        color: white;
+    }
+    
+    .show-links {
+        height: 10rem;
+        /* background-color: rgb(241, 254, 255); */
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    ul li {
+        margin-right: 30px;
+    }
+
+    .active {
+        color: rgb(5 150 105);;
+    }
+}
